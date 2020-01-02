@@ -197,7 +197,7 @@ def new_year_day():
     today = date.today()
     new_year = date(today.year, 1, 1)
     if new_year < today:
-        new_year = date(2020, 1, 1)
+        new_year = date(2021, 1, 1)
         time_to_new_year= abs(new_year - today)
         days_to = time_to_new_year.days
         return render_template('new_year_day.html', days_to = days_to)
