@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>How many days to CHILDREN'S DAY?</title>
+        <style>
+            body {
+                text-align: center;
+                background: url('https://image.freepik.com/free-photo/blue-birthday-balloons-with-copy-space-text_133138-6.jpg');
+
+            }
+            h1 {
+                color: maroon;
+            }
+            h2 {
+              font-size: 130px;
+              color: maroon;
+            }
+            h2:hover {
+              transform: scale(1.5);
+              color: orange;
+
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+        <h1> Welcome to Children's Day Page</h1>
+            {% if days_to %}
+            <h2><u> -{{ days_to }} </u></h2>
+            <h1>Days to Children's Day</h1>
+            {% endif %}
+    </body>
+<html>

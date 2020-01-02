@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block heading %}
+      Worker's Day page
+{% endblock %}
+
+{% block body %}
+        <h1> Welcome to Worker's Day Page</h1>
+            {% if days_to %}
+            <h2><u> -{{ days_to }} </u></h2>
+            <h1>Days to Worker's Day</h1>
+            {% endif %}
+{% endblock %}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>How many days to?</title>
+                <style>
+                    body {
+                        text-align: center;
+                        background: url('https://i.pinimg.com/originals/e4/5f/54/e45f54e2cc5516e2210c34453db5ab6e.jpg');
+                    }
+                    h1 {
+                        color: maroon;
+                    }
+                    h2 {
+                      font-size: 130px;
+                      color: maroon;
+                      transition: color 5s ease out;
+                    }
+                    h2:hover {
+
+                      color: green;
+                      cursor: pointer;
+                    }
+
+
+
+                </style>
+            </head>
+    <body>
+
+        <h1>{% block heading %}{% endblock %}</h1>
+
+        {% block body %}
+        {% endblock %}
+
+    </body>
+</html>

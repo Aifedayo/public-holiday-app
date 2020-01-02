@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>When is Website!</title>
+        <style>
+          body {
+            background: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v695batch3-sasi-06-simpleframe_1.jpg?w=800&dpr=1&fit=default&crop=default&auto=format&fm=pjpg&q=75&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.1.2&s=45a4ad9d2f23014a8d4172a11fd17244');
+            background-size: 100%;
+          }
+
+            .dropbtn {
+              background-color: maroon;
+              color: white;
+              padding: 24px;
+              font-size: 16px;
+              border: none;
+              transition: background-color 5s ease-out;
+              margin-left: 230px;
+              font-family: "Times New Roman", Times, serif;
+
+
+              }
+
+            .dropbtn:hover {
+              background-color: #FF6347;
+              cursor: pointer;
+
+            }
+            .dropdown {
+              position: relative;
+              display: inline-block;
+              margin-left: 230px;
+              font-family: "Times New Roman", Times, serif;
+
+            }
+            .dropdown-content {
+              display: none;
+              position: relative;
+              background-color: orange;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+              margin-left: 230px;
+              font-family: "Times New Roman", Times, serif;
+            }
+            .dropdown-content a {
+              color: white;
+              font-size: 16px;
+              font-weight: bold;
+              padding: 16px 16px;
+              text-decoration: none;
+              display: block;
+            }
+            .dropdown-content a:hover {background-color: maroon;}
+            .dropdown:hover .dropdown-content {display:block;}
+            .dropdown:hover .dropbtn {background-color: orange;}
+
+            h1 {
+              text-align: center;
+              color: white;
+              font-size: 20px;
+              font-family: "Times New Roman", Times, serif;
+
+            }
+            p {
+              text-align: center;
+              color: white;
+              font-size: 16px;
+              font-family: "Times New Roman", Times, serif;
+
+            }
+            #copyright {
+              text-align: center;
+              color: orange;
+              margin-top: 10px;
+            }
+            .name {
+              font-weight: bold;
+              font-size: 16px;
+            }
+
+            #flag {
+              width: 150px;
+              height: 70px;
+              margin: 50px auto;
+              position: fixed;
+              left: 0%;
+              background:
+              linear-gradient(to right,
+              #228B22 0,#228B22 33%, #ffffff 33%, #ffffff 66%, #228B22 66%, #228B22 100%);
+              animation-name: fade;
+              animation-duration: 25s;
+              animation-iteration-count: infinite;
+            }
+            #flag:hover {
+              transform:scale(1.5);
+            }
+            @keyframes fade {
+              50% {
+                left: 100%;
+              }
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Hello There!</h1>
+        <p> This is just a simple countdown web app to the public holidays in Nigeria</p>
+
+        <p> Click any of the link below to know how far you are in days from the event</p>
+
+        <div class = 'dropdown'>
+          <button class='dropbtn'>Choose from the drop down menu to pick a public holiday</button>
+          <div class='dropdown-content'>
+            <a href="{{ url_for ('workers_day') }}">Worker's Day ---- It is celebrated on the 1st of May</a>
+            <a href="{{ url_for ('children_day') }}">Children's Day  ---- It is celebrated on the 27th of May</a>
+            <a href="{{ url_for ('inauguration') }}">Inauguration Day  ---- It is celebrated on the 29th of May</a>
+            <a href="{{ url_for ('democracy') }}">Democracy Day  ---- It is celebrated on the 12th of June</a>
+            <a href="{{ url_for ('eid_ul_fitr') }}">Eid ul Fitr Day  ---- It is celebrated on the 24th of Apr</a>
+            <a href="{{ url_for ('independence') }}">Independence Day  ---- It is celebrated on the 1st of Oct</a>
+            <a href="{{ url_for ('eid_ul_adha') }}">Eid ul Adha Day  ---- It is celebrated on the 31st of July</a>
+            <a href="{{ url_for ('christmas_day') }}">Christmas Day  ---- It is celebrated on the 25th of Dec</a>
+            <a href="{{ url_for ('boxing_day') }}">Boxing Day ---- It is celebrated on the 26th of Dec</a>
+            <a href="{{ url_for ('new_year_day') }}">New Year Day ---- It is celebrated on the 1st of Jan</a>
+
+          </div>
+        </div>
+        <div id = 'flag'></div>
+        <div id='copyright'>
+          (c)2019 <span class='name'>AI Lagundoye.</span> All Rights Reserved
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block heading %}
+      Independence Day page
+{% endblock %}
+
+{% block body %}
+        <h1> Welcome to Independence Day Page</h1>
+            {% if days_to %}
+            <h2><u> -{{ days_to }} </u></h2>
+            <h1>Days to Independence Day</h1>
+            {% endif %}
+{% endblock %}

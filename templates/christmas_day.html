@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block heading %}
+      Christmas Day page
+{% endblock %}
+
+{% block body %}
+        <h1> Welcome to Christmas Day Page</h1>
+            {% if days_to %}
+            <h2><u> -{{ days_to }} </u></h2>
+            <h1>Days to Christmas Day</h1>
+            {% endif %}
+{% endblock %}
