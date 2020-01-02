@@ -13,7 +13,7 @@ def democracy():
     today = date.today()
     democracy_day = date(today.year, 6, 12)
     if democracy_day < today:
-        democracy_day = date(next.year, 6,12)
+        democracy_day = date(2020, 6,12)
         time_to_democracy = abs(today - democracy_day)
         days_to = time_to_democracy.days
 
